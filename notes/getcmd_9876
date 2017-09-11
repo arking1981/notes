@@ -1,0 +1,18 @@
+#! /usr/bin/sh
+
+echo
+echo "GETING ALL.....!!!"
+curl -i -H "Content-Type: application/json" -X GET  http://localhost:9876/api/notes/
+
+
+echo
+echo "GETTING ONE..."
+curl -i -H "Content-Type: application/json" -X GET  http://localhost:9876/api/notes/3
+
+echo
+echo "GETTING ONE..."
+curl -i -H "Content-Type: application/json" -X GET  http://localhost:9876/api/notes/12
+
+
+echo
+echo "DONE GET..."

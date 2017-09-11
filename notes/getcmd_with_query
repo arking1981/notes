@@ -1,0 +1,12 @@
+#! /usr/bin/sh
+
+echo
+echo "GETTING with query existent..."
+curl -i -H "Content-Type: application/json" -X GET  http://localhost:8080/api/notes?query=milk
+
+echo
+echo "GETTING with query non existent..."
+curl -i -H "Content-Type: application/json" -X GET  http://localhost:8080/api/notes?query="goatmilk+milk"
+
+echo
+echo "DONE GET..."

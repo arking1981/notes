@@ -1,0 +1,4 @@
+#! /usr/bin/sh
+
+
+curl -i -H "Content-Type: application/json" -X POST -d '{"body" : "Just another new message"}' http://localhost:8080/api/notes/
